@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		843EF8972087A1F40000D17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843EF8962087A1F40000D17C /* AppDelegate.swift */; };
-		843EF8992087A1F40000D17C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843EF8982087A1F40000D17C /* ViewController.swift */; };
 		843EF89C2087A1F40000D17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843EF89A2087A1F40000D17C /* Main.storyboard */; };
 		843EF89E2087A1F60000D17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843EF89D2087A1F60000D17C /* Assets.xcassets */; };
 		843EF8A12087A1F60000D17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843EF89F2087A1F60000D17C /* LaunchScreen.storyboard */; };
+		843EF8A92087A6E90000D17C /* AssignmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843EF8A82087A6E90000D17C /* AssignmentsVC.swift */; };
+		843EF8AB2087AFCD0000D17C /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843EF8AA2087AFCD0000D17C /* Assignment.swift */; };
+		843EF8AD2087B04E0000D17C /* AssignmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843EF8AC2087B04E0000D17C /* AssignmentService.swift */; };
+		843EF8B32087E74F0000D17C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843EF8B22087E74F0000D17C /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		843EF8932087A1F40000D17C /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843EF8962087A1F40000D17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		843EF8982087A1F40000D17C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		843EF89B2087A1F40000D17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		843EF89D2087A1F60000D17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843EF8A02087A1F60000D17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843EF8A22087A1F60000D17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843EF8A82087A6E90000D17C /* AssignmentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsVC.swift; sourceTree = "<group>"; };
+		843EF8AA2087AFCD0000D17C /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
+		843EF8AC2087B04E0000D17C /* AssignmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentService.swift; sourceTree = "<group>"; };
+		843EF8B22087E74F0000D17C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		843EF8952087A1F40000D17C /* Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				843EF8B12087CC3D0000D17C /* Models */,
+				843EF8B02087CC380000D17C /* Views */,
+				843EF8AF2087CC2B0000D17C /* Controllers */,
+				843EF8AE2087CC260000D17C /* Services */,
 				843EF8962087A1F40000D17C /* AppDelegate.swift */,
-				843EF8982087A1F40000D17C /* ViewController.swift */,
 				843EF89A2087A1F40000D17C /* Main.storyboard */,
 				843EF89D2087A1F60000D17C /* Assets.xcassets */,
 				843EF89F2087A1F60000D17C /* LaunchScreen.storyboard */,
 				843EF8A22087A1F60000D17C /* Info.plist */,
 			);
 			path = Assignment;
+			sourceTree = "<group>";
+		};
+		843EF8AE2087CC260000D17C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				843EF8AC2087B04E0000D17C /* AssignmentService.swift */,
+				843EF8B22087E74F0000D17C /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		843EF8AF2087CC2B0000D17C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				843EF8A82087A6E90000D17C /* AssignmentsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		843EF8B02087CC380000D17C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		843EF8B12087CC3D0000D17C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				843EF8AA2087AFCD0000D17C /* Assignment.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843EF8992087A1F40000D17C /* ViewController.swift in Sources */,
+				843EF8AD2087B04E0000D17C /* AssignmentService.swift in Sources */,
+				843EF8AB2087AFCD0000D17C /* Assignment.swift in Sources */,
 				843EF8972087A1F40000D17C /* AppDelegate.swift in Sources */,
+				843EF8A92087A6E90000D17C /* AssignmentsVC.swift in Sources */,
+				843EF8B32087E74F0000D17C /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
